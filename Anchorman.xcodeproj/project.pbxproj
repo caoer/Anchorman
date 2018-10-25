@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040F63D31EA2659B0038C381 /* Anchorman.h in Headers */ = {isa = PBXBuildFile; fileRef = 040F63D11EA2659B0038C381 /* Anchorman.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		040F63DD1EA268180038C381 /* Anchorman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F63DC1EA268180038C381 /* Anchorman.swift */; };
+		097DB4E92181E3BF00FD949D /* UILayoutGuide+Anchorman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DB4E22181E3BF00FD949D /* UILayoutGuide+Anchorman.swift */; };
+		097DB4EA2181E3BF00FD949D /* Anchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DB4E32181E3BF00FD949D /* Anchorable.swift */; };
+		097DB4EB2181E3BF00FD949D /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DB4E42181E3BF00FD949D /* Anchor.swift */; };
+		097DB4ED2181E3BF00FD949D /* UIView+BackwardsCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DB4E62181E3BF00FD949D /* UIView+BackwardsCompatibility.swift */; };
+		097DB4EE2181E3BF00FD949D /* UIView+Anchorman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DB4E72181E3BF00FD949D /* UIView+Anchorman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040F63CE1EA2659B0038C381 /* Anchorman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Anchorman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		040F63D11EA2659B0038C381 /* Anchorman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Anchorman.h; sourceTree = "<group>"; };
-		040F63D21EA2659B0038C381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		040F63DC1EA268180038C381 /* Anchorman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchorman.swift; sourceTree = "<group>"; };
+		097DB4E22181E3BF00FD949D /* UILayoutGuide+Anchorman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutGuide+Anchorman.swift"; sourceTree = "<group>"; };
+		097DB4E32181E3BF00FD949D /* Anchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchorable.swift; sourceTree = "<group>"; };
+		097DB4E42181E3BF00FD949D /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		097DB4E52181E3BF00FD949D /* Anchorman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anchorman.h; sourceTree = "<group>"; };
+		097DB4E62181E3BF00FD949D /* UIView+BackwardsCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BackwardsCompatibility.swift"; sourceTree = "<group>"; };
+		097DB4E72181E3BF00FD949D /* UIView+Anchorman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchorman.swift"; sourceTree = "<group>"; };
+		097DB4E82181E3BF00FD949D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +39,7 @@
 		040F63C41EA2659B0038C381 = {
 			isa = PBXGroup;
 			children = (
-				040F63D01EA2659B0038C381 /* Anchorman */,
+				097DB4E12181E3BF00FD949D /* Source */,
 				040F63CF1EA2659B0038C381 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,14 +52,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		040F63D01EA2659B0038C381 /* Anchorman */ = {
+		097DB4E12181E3BF00FD949D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				040F63DC1EA268180038C381 /* Anchorman.swift */,
-				040F63D11EA2659B0038C381 /* Anchorman.h */,
-				040F63D21EA2659B0038C381 /* Info.plist */,
+				097DB4E22181E3BF00FD949D /* UILayoutGuide+Anchorman.swift */,
+				097DB4E32181E3BF00FD949D /* Anchorable.swift */,
+				097DB4E42181E3BF00FD949D /* Anchor.swift */,
+				097DB4E52181E3BF00FD949D /* Anchorman.h */,
+				097DB4E62181E3BF00FD949D /* UIView+BackwardsCompatibility.swift */,
+				097DB4E72181E3BF00FD949D /* UIView+Anchorman.swift */,
+				097DB4E82181E3BF00FD949D /* Info.plist */,
 			);
-			path = Anchorman;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +73,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040F63D31EA2659B0038C381 /* Anchorman.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040F63DD1EA268180038C381 /* Anchorman.swift in Sources */,
+				097DB4EA2181E3BF00FD949D /* Anchorable.swift in Sources */,
+				097DB4ED2181E3BF00FD949D /* UIView+BackwardsCompatibility.swift in Sources */,
+				097DB4E92181E3BF00FD949D /* UILayoutGuide+Anchorman.swift in Sources */,
+				097DB4EB2181E3BF00FD949D /* Anchor.swift in Sources */,
+				097DB4EE2181E3BF00FD949D /* UIView+Anchorman.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +266,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Anchorman/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -260,7 +274,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -273,14 +287,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Anchorman/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.Anchorman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
